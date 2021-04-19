@@ -1,0 +1,70 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"D:\\Python\\\
+    cifra_cesar\\tests\\tests_app.py\", line 17, in test_encrypt_deve_retornar_abc_quando_entrar_xyz\n\
+    \    self.assertEqual(encrypt(entrada), saida)\nAssertionError: 'uvw' != 'abc'\n\
+    - uvw\n+ abc\n\n"
+  killer: test_encrypt_deve_retornar_abc_quando_entrar_xyz (tests_app.TestCifraCesar)
+  module: &id001 !!python/module:src.app ''
+  mutations:
+  - lineno: 11
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 3
+  time: 0.0010340213775634766
+- exception_traceback: "Traceback (most recent call last):\n  File \"D:\\Python\\\
+    cifra_cesar\\tests\\tests_app.py\", line 22, in test_decrypt_deve_retornar_abc_quando_entrar_def\n\
+    \    self.assertEqual(decrypt(entrada), saida)\nAssertionError: 'ghi' != 'abc'\n\
+    - ghi\n+ abc\n\n"
+  killer: test_decrypt_deve_retornar_abc_quando_entrar_def (tests_app.TestCifraCesar)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.000965118408203125
+- exception_traceback: "Traceback (most recent call last):\n  File \"D:\\Python\\\
+    cifra_cesar\\tests\\tests_app.py\", line 22, in test_decrypt_deve_retornar_abc_quando_entrar_def\n\
+    \    self.assertEqual(decrypt(entrada), saida)\nAssertionError: 'ghi' != 'abc'\n\
+    - ghi\n+ abc\n\n"
+  killer: test_decrypt_deve_retornar_abc_quando_entrar_def (tests_app.TestCifraCesar)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0009968280792236328
+- exception_traceback: "Traceback (most recent call last):\n  File \"D:\\Python\\\
+    cifra_cesar\\tests\\tests_app.py\", line 22, in test_decrypt_deve_retornar_abc_quando_entrar_def\n\
+    \    self.assertEqual(decrypt(entrada), saida)\nAssertionError: 'ghi' != 'abc'\n\
+    - ghi\n+ abc\n\n"
+  killer: test_decrypt_deve_retornar_abc_quando_entrar_def (tests_app.TestCifraCesar)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: ROR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0010004043579101562
+number_of_tests: 4
+targets:
+- src
+tests:
+- name: tests_app
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.001996278762817383
+  create_target_ast: 0.001007080078125
+  mutate_module: 0.08797121047973633
+  run_tests_with_mutant: 0.0050296783447265625
+total_time: 0.08999490737915039
