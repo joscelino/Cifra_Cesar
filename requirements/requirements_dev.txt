@@ -6,3 +6,4 @@ pre-commit~=2.12
 pylint~=2.7
 radon~=4.5
 safety~=1.10
+virtualenv~=20.4
