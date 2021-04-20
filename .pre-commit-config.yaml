@@ -28,7 +28,7 @@ repos:
 -   repo: local
     hooks:
     - id: Reorder python imports
-      name: isort
+      name: Reorder python imports
       language: system
       entry: isort .
       always_run: true
