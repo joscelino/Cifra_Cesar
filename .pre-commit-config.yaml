@@ -27,6 +27,15 @@ repos:
       stages: [commit]
 -   repo: local
     hooks:
+    - id: Reorder python imports
+      name: isort
+      language: system
+      entry: isort .
+      always_run: true
+      pass_filenames: false
+      stages: [commit]
+-   repo: local
+    hooks:
       - id: requirements
         name: requirements
         entry: pip freeze > requirements\requirements.txt;
