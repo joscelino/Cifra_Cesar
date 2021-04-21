@@ -15,7 +15,7 @@ mutations:
   number: 1
   status: killed
   tests_run: 3
-  time: 0.0009684562683105469
+  time: 0.0009996891021728516
 - exception_traceback: "Traceback (most recent call last):\n  File \"D:\\Python\\\
     cifra_cesar\\tests\\tests_app.py\", line 22, in test_decrypt_deve_retornar_abc_quando_entrar_def\n\
     \    self.assertEqual(decrypt(entrada), saida)\nAssertionError: 'ghi' != 'abc'\n\
@@ -28,7 +28,7 @@ mutations:
   number: 2
   status: killed
   tests_run: 1
-  time: 0.0010335445404052734
+  time: 0.0010006427764892578
 - exception_traceback: "Traceback (most recent call last):\n  File \"D:\\Python\\\
     cifra_cesar\\tests\\tests_app.py\", line 22, in test_decrypt_deve_retornar_abc_quando_entrar_def\n\
     \    self.assertEqual(decrypt(entrada), saida)\nAssertionError: 'ghi' != 'abc'\n\
@@ -41,7 +41,7 @@ mutations:
   number: 3
   status: killed
   tests_run: 1
-  time: 0.0
+  time: 0.0010004043579101562
 - exception_traceback: "Traceback (most recent call last):\n  File \"D:\\Python\\\
     cifra_cesar\\tests\\tests_app.py\", line 22, in test_decrypt_deve_retornar_abc_quando_entrar_def\n\
     \    self.assertEqual(decrypt(entrada), saida)\nAssertionError: 'ghi' != 'abc'\n\
@@ -64,7 +64,7 @@ tests:
   time: 0.0
 time_stats:
   create_mutant_module: 0.0009996891021728516
-  create_target_ast: 0.0010368824005126953
-  mutate_module: 0.09877800941467285
-  run_tests_with_mutant: 0.005996227264404297
-total_time: 0.10277605056762695
+  create_target_ast: 0.0
+  mutate_module: 0.09199881553649902
+  run_tests_with_mutant: 0.007002353668212891
+total_time: 0.09599900245666504
